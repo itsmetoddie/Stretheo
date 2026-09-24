@@ -2,8 +2,6 @@
 //  StretheoTests.swift
 //  StretheoTests
 //
-//  Created by Todor Zapreff on 30.05.26.
-//
 
 import Testing
 @testable import Stretheo

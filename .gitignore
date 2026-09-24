@@ -1,0 +1,68 @@
+# Xcode / Swift
+DerivedData/
+build/
+.build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+Packages/
+Package.resolved
+.swiftpm/
+
+# CocoaPods / Carthage (if added later)
+Pods/
+Carthage/Build/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# AI assistants / editor agents
+.cursor/
+.cursorignore
+.cursorrules
+.cursor-*/
+.claude/
+CLAUDE.md
+.aider*
+.continue/
+.windsurf/
+.copilot/
+*.code-workspace
+
+# Local secrets / credentials (keep patterns even if none present today)
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.mobileprovision
+Secrets.xcconfig
+*Secret*.xcconfig
+*Credentials*.xcconfig
+AuthKey_*.p8
+
+# Archives / packaging
+*.xcarchive
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output

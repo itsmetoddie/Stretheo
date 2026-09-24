@@ -2,8 +2,6 @@
 //  StretheoUITestsLaunchTests.swift
 //  StretheoUITests
 //
-//  Created by Todor Zapreff on 30.05.26.
-//
 
 import XCTest
 

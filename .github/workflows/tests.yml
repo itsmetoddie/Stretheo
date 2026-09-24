@@ -1,0 +1,29 @@
+name: Tests
+
+"on":
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Stretheo unit & UI tests
+    runs-on: macos-26
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode 26.6
+        run: sudo xcode-select -s /Applications/Xcode_26.6.app/Contents/Developer
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Run tests
+        run: |
+          xcodebuild \
+            -scheme Stretheo \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro,OS=26.5' \
+            test
